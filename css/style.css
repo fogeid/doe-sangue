@@ -1,9 +1,88 @@
 body {
-    font-family: 'Oxanium', cursive;
+    font-family: 'Oxanium', sans-serif;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .container {
     max-width: 80%;
     margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+    padding: 50px 0;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.header h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.header p {
+    font-size: .9rem;
+    margin-bottom: 10px;
+}
+
+/* MAIN */
+.main {
+    margin-bottom: 50px;
+}
+
+/* FORM */
+.main .section-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 50px;
+}
+
+.main .section-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .section-form input {
+    margin-bottom: 5px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #c9c9c9;
+}
+
+.main .section-form button {
+    margin-bottom: 5px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+/* DONATORS */
+.main .section-donators {
+    
+}
+
+.main .section-donators h2 {
+    margin-bottom: 20px;
+}
+
+.main .section-donators .donators {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: auto;
+}
+
+.footer p {
+    text-align: center;
+    padding: 10px 0;
 }
