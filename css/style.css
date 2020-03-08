@@ -16,7 +16,7 @@ body {
     padding: 50px 0;
 }
 
-.header img {
+.header .logo {
     max-width: 200px;
     margin-bottom: 30px;
 }
@@ -59,9 +59,10 @@ body {
     margin-bottom: 40px;
     background: #ff4f4f;
     width: 50%;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
     padding: 20px 0;
     border-radius: 10px;
+    transition: all .2s ease;
 }
 
 .main .section-form h3 {
@@ -107,7 +108,6 @@ body {
 .main .section-donators {
     max-width: 60%;
     margin: 0 auto;
-    margin-top: 40px;
 }
 
 .main .section-donators h2 {
@@ -158,4 +158,12 @@ body {
     border-top: 1px solid #dfdfdf;
     text-align: center;
     padding: 10px 0;
+}
+
+/* FUNCIONALIDADES JS */
+.main section.hide {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    margin-bottom: -40px;
 }
