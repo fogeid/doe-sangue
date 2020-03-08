@@ -105,12 +105,14 @@ body {
 
 /* DONATORS */
 .main .section-donators {
+    max-width: 60%;
+    margin: 0 auto;
     margin-top: 40px;
 }
 
 .main .section-donators h2 {
     font-size: 1.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .main .section-donators span {
@@ -120,6 +122,31 @@ body {
 .main .section-donators .donators {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.main .section-donators .donators .blood {
+    color: #ff4f4f;
+    font-size: .8rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.blood::before {
+    content: "";
+    background-color: #ff4f4f22;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 50%;
+    border-top-right-radius: 0;
+    transform: rotate(-45deg);
+}
+
+.main .section-donators .donators .donate p {
+    margin-top: 30px;
 }
 
 /* FOOTER */
