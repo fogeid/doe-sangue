@@ -1,3 +1,9 @@
 body {
-    background: red;
+    font-family: 'Oxanium', cursive;
+    text-align: center;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
 }
